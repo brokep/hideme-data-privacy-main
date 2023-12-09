@@ -4,6 +4,7 @@ import Navigation from "@/app/components/navigation/navbar";
 import "@/styles/normalize.css";
 import "@/styles/webflow.css";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({ children }) {
   return (
@@ -14,6 +15,24 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation />
         {children}
+      </body>
+    </html>
+  );
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <Analytics />
       </body>
     </html>
   );
