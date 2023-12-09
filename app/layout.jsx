@@ -11,26 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <title>Next.js</title>
       </Head>
       <body>
         <Navigation />
-        {children}
-      </body>
-    </html>
-  );
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <head>
-        <title>Next.js</title>
-      </head>
-      <body>
         {children}
         <Analytics />
       </body>
