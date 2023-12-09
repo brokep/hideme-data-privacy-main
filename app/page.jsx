@@ -7,7 +7,7 @@ import Cart from "./components/cart";
 import ProtectingData from "./components/protecting-data";
 import Category from "./components/category";
 import QA from "./components/QA";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function Home() {
   return (
     <>
